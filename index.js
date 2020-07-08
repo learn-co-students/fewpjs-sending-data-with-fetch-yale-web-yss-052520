@@ -26,7 +26,7 @@ function submitData(name, email) {
     })
     .then(function(object) {
         const h1 = document.createElement('h1')
-        document.body.innerText = object.id
+        document.body.innerHTML = object.id
         // document.body.append(h1)
         debugger
         // console.log(object);
@@ -36,7 +36,7 @@ function submitData(name, email) {
     //   console.log(error.message);
         debugger
         const h2 = document.createElement('h2')
-        document.body.innerText = error.message
+        document.body.innerHTML = error.message
         // document.body.append(h2)
         debugger
         // console.log(object);
