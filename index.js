@@ -22,7 +22,9 @@ function submitData(name, email) {
         // newName.innerText = data.name
         // let newEmail = document.createElement('p')
         // newEmail.innerText = data.email
-        return document.body.innerHTML = data.id })
+        let newId = document.createElement('p')
+        newId.innerHTML = data.id 
+        document.querySelector('body').append(newId) })
         .catch(error => {
             let messages = document.createElement('p')
             messages.innerHTML = error.message
