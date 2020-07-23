@@ -11,5 +11,5 @@ function submitData(name, email) {
 
 	return fetch('http://localhost:3000/users', configObj)
 		.then(resp => resp.json())
-		.then(resp => document.querySelector('body').innerText += resp.id)
+		.then(resp => document.body.innerText = resp["id"])
 }
